@@ -33,11 +33,34 @@ body {
     width: 88%;
 }
 
-.main-content .top-navbar {
+.main-content .top-navbar .top-navbar-container {
     height: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0 50px 0 50px;
+}
+
+.top-navbar .top-navbar-container .navigation-arrows {
+    display: flex;
+}
+
+.top-navbar-container .navigation-arrows svg {
+    width: 22px;
+    height: 22px;
+    margin-right: 20px;
+    color: #888888;
+}
+
+.top-navbar-container .user {
+    display: flex;
+    align-items: center;
+}
+
+.top-navbar-container .user svg {
+    width: 22px;
+    height: 22px;
+    margin-right: 5px;
 }
 
 .main-content .container {
@@ -69,7 +92,6 @@ body {
     color: #aaaaaa;
     margin-right: 20px;
 }
-
 
 .albuns .albuns-list {
     display: flex;
@@ -119,3 +141,134 @@ body {
     height: 90px;
     background-color: #282828;
 }
+
+.side-navbar {
+    display: flex;
+    flex-direction: column;
+    padding-top: 24px;
+    font-size: 13px;
+    font-weight: bolder;
+    color: #aaaaaa;
+}
+
+.side-navbar .side-navbar-container {
+    padding-left: 24px;
+}
+
+.side-navbar .navbar-logo .spotify-logo {
+    width: 130px;
+    height: 39px;
+    padding: 0 0 22px 24px;
+    color: #fff;
+}
+
+.side-navbar .navbar-links .navbar-links-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.side-navbar .navbar-links .navbar-link-item {
+    display: flex;
+    align-items: center;
+    width: 93%;
+    height: 40px;
+    border-radius: 4px;
+    vertical-align: middle;
+    font-family: "Gotham-Bold";
+}
+
+.side-navbar .navbar-links .navbar-link-item:nth-child(1) {
+    background-color: #282828;
+    color: #fff;
+}
+
+.navbar-links .navbar-link-item svg {
+    margin-left: 16px;
+    margin-right: 15px;
+
+}
+
+.navbar-playlists .playlists-title {
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #aaaaaa;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+.navbar-playlists .playlist-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.playlist-item .playlist-item-title {    
+    font-weight: bolder;
+}
+
+.navbar-playlists .playlist-icon-plus {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 32px;
+    height: 32px;
+    background-color: #aaaaaa;
+    margin-right: 15px;
+    
+}
+
+.navbar-playlists .playlist-icon-plus .icon-plus {
+    color: #040404;
+    font-size: 27px;
+    font-weight: 500;
+}
+
+.navbar-playlists .playlist-icon-heart {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 32px;
+    height: 32px;    
+    background: linear-gradient(120deg, rgba(73, 17, 255, 0.753) 30%, rgb(209, 209, 209) 100%);
+    margin-right: 15px;
+    
+}
+
+.navbar-separator hr {
+    border-width: 0.3px;
+    border-color: #202020;
+}
+
+.navbar-playlists .playlist-icon-heart .icon-heart {
+    color: #aaaaaa;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.album-list-scroll {
+    overflow: auto;
+    height: 600px;
+}
+
+.album-list .album-playlist-name {
+    font-size: 13px;
+    padding: 9px 0 10px 0;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 16px;
+}  
+   
+::-webkit-scrollbar-thumb {
+background: #505050; 
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: #555; 
+}
+
