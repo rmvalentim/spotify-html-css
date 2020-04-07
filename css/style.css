@@ -1,0 +1,121 @@
+body {
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+  }
+
+@font-face {
+    font-family: "GothamBook";
+    src: url("./font/GothamBook.ttf");
+}
+
+@font-face {
+    font-family: "Gotham-Bold";
+    src: url("./font/GothamBold.ttf");
+}
+
+.main {
+    color: #fff;
+    display: flex;
+    font-family: "GothamBook";
+}
+
+.side-navbar {
+    background-color: #040404;
+    width: 230px;
+    height: 880px;
+    position: fixed;
+}
+
+.main-content {
+    margin-left: 230px;
+    background-color: #121212;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 88%;
+}
+
+.main-content .top-navbar {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-content .container {
+    padding: 0 32px 0 32px;
+    height: 1100px;
+}
+
+.container .category {
+    padding: 16px 0 16px 0;
+}
+
+.container .category .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 6px;
+    padding-bottom: 28px;
+}
+
+.category .header .title {
+    font-size: 26px;
+    font-weight: bolder;
+}
+
+.category .header .see-all {
+    text-transform: uppercase;
+    font-family: "Gotham-Bold";
+    font-size: 13px;
+    color: #aaaaaa;
+    margin-right: 20px;
+}
+
+
+.albuns .albuns-list {
+    display: flex;
+}
+
+.albuns .albuns-list .list-item {
+    background-color: #282828;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 170px;
+    height: 238px;
+    border-radius: 8px;
+    margin-right: 16px;
+}
+
+.category .albuns .album-image {
+    width: 125px;
+    height: 125px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.category .albuns .albun-infos {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-left: -10px;
+}
+.category .albuns .album-title {
+    font-size: 13px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    font-family: "Gotham-Bold"; 
+}
+
+.category .albuns .album-creator {
+    font-size: 11px;
+    color: #aaaaaa;
+}
+
+.bottom-navbar {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 90px;
+    background-color: #282828;
+}
