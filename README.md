@@ -6,3 +6,7 @@ Spotify web interface implementation
 
 - HTML
 - CSS
+
+## Preview
+
+![Spotify Interface HTML + CSS](https://github.com/rmvalentim/spotify-html-css/raw/master/img/spotify-interface.PNG)
