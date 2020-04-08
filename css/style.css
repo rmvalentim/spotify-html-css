@@ -4,12 +4,12 @@ body {
 
 @font-face {
     font-family: "GothamBook";
-    src: url("./font/GothamBook.ttf");
+    src: url("../font/GothamBook.ttf");
 }
 
 @font-face {
     font-family: "Gotham-Bold";
-    src: url("./font/GothamBold.ttf");
+    src: url("../font/GothamBold.ttf");
 }
 
 .main {
@@ -271,4 +271,51 @@ background: #505050;
 ::-webkit-scrollbar-thumb:hover {
 background: #555; 
 }
+
+.bottom-navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container .container-block .music {
+    display: flex;
+    align-items: center;
+    margin: 16px 0 0 16px;
+    font-family: "GothamBook";
+    color: #aaaaaa;
+    font-size: 12px;
+}
+
+.container-block .music .music-image {
+    width: 56px;
+    height: 56px;
+}
+
+.music .atual-music-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 30px 0 10px;
+}
+
+.music .atual-music-description .title {
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.container-block .music i {
+    font-size: 16px;
+}
+
+.container-block .buttons {
+    display: flex;
+    align-items: center;
+    color: #aaaaaa;
+    font-size: 15px;
+}
+
+
+
 
