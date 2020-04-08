@@ -52,9 +52,22 @@ body {
     color: #888888;
 }
 
+.top-navbar-container .navigation-arrows svg:hover {
+        color: #fff;
+        cursor: pointer;
+}
+
 .top-navbar-container .user {
     display: flex;
     align-items: center;
+    padding: 5px;
+    border-radius: 16px;
+}
+
+.top-navbar-container .user:hover {
+    padding: 5px;
+    background-color: #282828;
+    cursor: pointer;
 }
 
 .top-navbar-container .user svg {
@@ -89,12 +102,22 @@ body {
     font-weight: bolder;
 }
 
+.category .header .title:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 .category .header .see-all {
     text-transform: uppercase;
     font-family: "Gotham-Bold";
     font-size: 13px;
     color: #aaaaaa;
     margin-right: 20px;
+}
+
+.category .header .see-all:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .albuns .albuns-list {
@@ -110,6 +133,10 @@ body {
     height: 238px;
     border-radius: 8px;
     margin-right: 16px;
+}
+
+.albuns .albuns-list .list-item:hover {
+    cursor: pointer;
 }
 
 .category .albuns .album-image {
@@ -183,6 +210,12 @@ body {
     font-family: "Gotham-Bold";
 }
 
+.side-navbar .navbar-links .navbar-link-item:hover {
+    color: #fff;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
 .side-navbar .navbar-links .navbar-link-item:nth-child(1) {
     background-color: #282828;
     color: #fff;
@@ -202,11 +235,15 @@ body {
     margin-bottom: 20px;
 }
 
-
 .navbar-playlists .playlist-item {
     display: flex;
     align-items: center;
     margin-bottom: 12px;
+}
+.navbar-playlists .playlist-item:hover {
+    color: #fff;
+    cursor: pointer;
+    transition: 0.4s;
 }
 
 .playlist-item .playlist-item-title {    
@@ -299,8 +336,24 @@ body {
     margin-bottom: 5px;
     
 }
+.music .atual-music-description .title:hover {
+    color: #fff;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.music .atual-music-description .artist:hover {
+    color: #fff;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 .music .icon-heart-empty {
     margin-right: 8px;
+}
+
+.container-block i:hover {
+    color: #fff;
 }
 
 .container-block .music i {
